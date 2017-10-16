@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "简介"
-date: 2017-10-15
+date: 2017-10-16
 description: "强化学习笔记系列的简介"
 tag: 强化学习 
 ---  
