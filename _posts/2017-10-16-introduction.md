@@ -20,7 +20,7 @@ agent即“个体”，相当于机器人、游戏中的主角。在RL中个体�
 
 ### environment
 也就是环境。顾名思义，它就是相当于游戏中除主角之外的地图、怪物等集合。环境接收个体动作之后，对本身信息进行更新（也就是一个交互），并返回个体一个奖励。个体与环境的交互图如下：
-![](ibacor.github.io/images/posts/RL/agent_envir.png)
+![](/images/posts/RL/agent_envir.png)
 ### state
 译为“状态”，是历史信息的函数，包含所有已有的信息。根据客体的不同状态分为三种：环境状态、个体状态和信息状态。环境状态是环境所有的信息，对于个体来说有可观测和部分可观测之别。可观测就是个体知道环境的所有信息，相当于开启上帝视角。部分可观测指个体只了解环境的部分信息，相当于从人类的视角去探索。  
 个体状态是个体可利用的所有信息，是个体历史信息的函数。  
@@ -29,15 +29,15 @@ agent即“个体”，相当于机器人、游戏中的主角。在RL中个体�
 上面的条件概率等式的言外之意就是未来状态只取决于当前，与过去的所有信息无关！  
 
 强化学习大部分情况下都是在训练个体，个体的组成也是重要的概念。一般来说个体由三部分组成：  
-**policy**：译为“策略”，是状态到动作的函数。  
+**policy**：译为“策略”，是状态到动作的函数:  
 ![](/images/posts/RL/equ_policy.png)
 **value function**：价值函数，是评价状态的一个指标。具体为未来奖励的期望值，即：  
 ![](/images/posts/RL/equ_valuefunc.png)
-**model**：是个体对环境的建模，我的理解是相当于人类对环境的认知建模，主要包括状态转移概率
+**model**：是个体对环境的建模，我的理解是相当于人类对环境的认知建模，主要包括状态转移概率:
 ![](/images/posts/RL/equ_trans.png)
-和奖励
+和奖励:
 ![](/images/posts/RL/equ_modelReward.png)  
 
 ## 强化学习的分类
-根据个体是否建立模型可分为model-based和model-free两大类，之后将会学习到还能进一步分类；根据使用的指标分为value-vased、policy-based和actor-critic。
+根据个体是否建立模型可分为model-based和model-free两大类，之后将会学习到还能进一步分类；根据使用的指标分为value-vased、policy-based和actor-critic.
 ![](/images/posts/RL/agent_type.png)
