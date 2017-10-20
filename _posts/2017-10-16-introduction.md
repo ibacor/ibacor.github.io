@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "简介"
+title: "RL学习笔记一：简介"
 date: 2017-10-16
 description: "强化学习笔记系列的简介"
 tag: 强化学习 
