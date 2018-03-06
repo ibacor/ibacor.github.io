@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "RL学习笔记二：MDP"
-date: 2017-10-19
-description: "初识MDP"
-tag: 强化学习 
+title: "初始化与清理"
+date: 2018-3-6
+description: "java的初始化"
+tag: think in java 读书笔记 
 ---  
 
 ​    
